@@ -16,12 +16,15 @@ passport.deserializeUser((id, done) => {
       done(null, user);
   });
 });
-
+// issue#1 - callbackURL relative path, when we deployed ('/auth/google/callback') to HEROKU
+// http on Heroku - sol. https://shrouded-savannah-57144.herokuapp.com/ use the full path
+// or proxy: true
 passport.use(new GoogleStrategy(
     {
     clientID: GoogleKeys.googleClientID,
     clientSecret: GoogleKeys.googleClientSecret,
-    callbackURL: '/auth/google/callback'
+    callbackURL: '/auth/google/callback',
+    proxy: true
   }, (accessToken, refreshToken, profile, done) => {
         console.log('accessToken', accessToken);
         console.log('refreshToken', refreshToken);

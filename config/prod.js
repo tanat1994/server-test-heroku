@@ -5,5 +5,6 @@ module.exports = {
   mongoURI: process.env.MONGO_URI,
   cookieKey: process.env.COOKIE_KEY,
   TWITTER_CONSUMER_KEY: process.env.TWITTER_CONSUMER_KEY,
-  TWITTER_CONSUMER_SECRET: process.env.TWITTER_CONSUMER_SECRET
+  TWITTER_CONSUMER_SECRET: process.env.TWITTER_CONSUMER_SECRET,
+  googleRedirectURI: 'https://shrouded-savannah-57144.herokuapp.com'
 };
