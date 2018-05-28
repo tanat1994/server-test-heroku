@@ -1,0 +1,6 @@
+https://accounts.google.com/o/oauth2/v2/auth?
+response_type=code&
+redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Fgoogle%2Fcallback&
+
+scope=profile%20email&
+client_id=650104482268-5smvg7l8n0m8llk7k2ms7j0kkipp563m.apps.googleusercontent.com
